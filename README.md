@@ -1,17 +1,22 @@
 LatexModules
 ============
 
-Modules for Latex preambles
+Modules for Latex preambles.
 
 These modules can be loaded into your preamble.
-Each modules should contain all required packages to run
+Each modules should contain all required packages to run.
+
+Installation
+------------
+Use LatexModules as a [git submodule](http://git-scm.com/book/en/Git-Tools-Submodules).
+This way you can update it on the run.
 
 Example
 -------
 Your tree looks like this:
 
-+ Document
-	+ Modules
++ Document/
+	+ Modules/
 		- ...
 		- FigureSetup.tex
 		- ...
