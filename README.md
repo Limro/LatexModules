@@ -7,7 +7,7 @@ These modules can be loaded into your preamble.
 Each modules should contain all required packages to run
 
 Example
-============
+-------
 Your tree looks like this:
 
 + Document
@@ -32,7 +32,7 @@ Your Main.tex would look like this:
 Then your preamble would be:
 
 ```latex
-\input{Modules/FigureSetup}
+\input{LatexModules/FigureSetup} %Note: "LatexModules" is your name of the directory
 ...
 \title{Latex Modules setup}
 ```
