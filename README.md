@@ -20,17 +20,21 @@ Your tree looks like this:
 
 Your Main.tex would look like this:
 
+```latex
 \documentclass[a4, english]{article}
 \input{Preamble}
 
 \begin{document}
 \dots
 \end{document}
+```
 
 Then your preamble would be:
 
+```latex
 \input{Modules/FigureSetup}
 ...
 \title{Latex Modules setup}
+```
 
 That is all you need.
