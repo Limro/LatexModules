@@ -1,4 +1,6 @@
 \usepackage{ulem} %math
+% \uuline{result} for double lines under a result
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -17,4 +19,10 @@ $
 }{%
   \end{array}\right]
   $
+}
+
+\newenvironment{MatPos}{%
+$  \left\{ \begin{array}{@{}*{100}{l}r@{}}%
+}{%
+  \end{array}\right.$ %
 }
