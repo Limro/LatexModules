@@ -11,6 +11,14 @@ Installation
 Use LatexModules as a [git submodule](http://git-scm.com/book/en/Git-Tools-Submodules).
 This way you can update it on the run.
 
+Use the commands as follow:
+
+```git
+git submodule add ...
+git submodule init
+git submodule update
+```
+
 Example
 -------
 Your tree looks like this:
