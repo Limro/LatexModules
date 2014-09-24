@@ -8,7 +8,7 @@ Each modules should contain all required packages to run.
 
 Installation
 ------------
-Download this folder as a .zip-file and place it in a folder called ```Modules```
+Download this folder as a .zip-file and place it in a folder called ```LatexModules```
 
 
 Example
