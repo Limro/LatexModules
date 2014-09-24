@@ -8,16 +8,8 @@ Each modules should contain all required packages to run.
 
 Installation
 ------------
-Use LatexModules as a [git submodule](http://git-scm.com/book/en/Git-Tools-Submodules).
-This way you can update it on the run.
+Download this folder as a .zip-file and place it in a folder called ```Modules```
 
-Use the commands as follow:
-
-```git
-git submodule add ...
-git submodule init
-git submodule update
-```
 
 Example
 -------
