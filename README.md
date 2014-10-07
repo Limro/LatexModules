@@ -16,7 +16,7 @@ Example
 Your tree looks like this:
 
 + Document/
-	+ Modules/
+	+ LatexModules/
 		- ...
 		- FigureSetup.tex
 		- ...
