@@ -1,13 +1,42 @@
-%Standard sti at søge efter billeder
+%Standard path to search for pictures
 %--------------------------------------------------
 %\begin{figure}[hbtp]
 %\centering
-%\includegraphics[scale=1]{filnavn-for-png}
+%\includegraphics[width =0.9 \textwidth]{filnavn-for-png}
 %\caption{Titel}
 %\label{fig:referenceNavn}
 %\end{figure}
 %--------------------------------------------------
+
+% -------------------------------------------------
+% Pictures side by side
+% -------------------------------------------------
+% \begin{figure}[hbtp]
+% 	\centering
+
+% 	\begin{minipage}[t]{.45\textwidth}
+% 		\includegraphics[width=\textwidth]{figure.png}
+% 		\captionof{figure}{This is the caption for a figure}
+% 		\label{fig:nr1}
+% 	\end{minipage} 
+% 	\hfill % Fills the gap with empty space\usepackage{capt-of}
+% 	\begin{minipage}[t]{.45\textwidth}
+% 		\includegraphics[width=\textwidth]{figure.png}
+% 		\captionof{figure}{This is the caption for a figure}
+% 		\label{fig:nr2}
+% 	\end{minipage}
+
+% \end{figure}
+% -------------------------------------------------
+
 \usepackage{graphicx}
-\usepackage{subcaption}
+\usepackage{capt-of}
 \usepackage{float}
-\graphicspath{{../Figures/}}
+\usepackage{placeins}
+% Provides \FloatBarrier which prevents figure to float above and below this point
+
+%Paths the pictures can be located
+\graphicspath{
+	{../Figures/}
+	{Figures/}
+}

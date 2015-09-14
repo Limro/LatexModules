@@ -1,19 +1,36 @@
+\usepackage{xparse}
+\usepackage[table]{xcolor}
 
+\newcommand{\uc}{Use Case\xspace}
+\newcommand{\ucs}{Use Cases\xspace}
 
 %--------------------------------------------------
-%\begin{TestCaseIntro}
-%\TCprep{Preperation of sorts \\Anything here}
-%\TCdesc{Description of what is ablut to happen}
-%\end{TestCaseIntro}
+%\begin{Actors}
+%\Actor
+%	{Actor}
+%	{Description}
+% \\
+%\Actor
+%	{Actor}
+%	{Description}
+%\end{Actors}
 %--------------------------------------------------
-\newcommand{\TCdescWidth}{0.15 \textwidth}
-\newcommand{\TCIntroWidth}{0.8\textwidth}
-\newcommand{\TCprep}[1]{\textbf{Forberedelse:} & \parbox[t]{\TCIntroWidth}{#1}}
-\newcommand{\TCdesc}[1]{\\ \textbf{Beskrivelse:} & \parbox[t]{\TCIntroWidth}{#1}}
+\newcommand{\ActorWidth}{0.15 \textwidth}
+\newcommand{\ActorDescWidth}{0.8  \textwidth}
 
-\newenvironment{TestCaseIntro}
-{\begin{longtable}{p{\TCdescWidth} p{\TCIntroWidth}}}
-{\end{longtable}}
+\newenvironment{Actors}
+{%
+	\rowcolors{1}{gray!20!white}{} % Color on every other line
+	\begin{longtable}{p{\ActorWidth} p{\ActorDescWidth}} \hline
+	\hiderowcolors % We don't want the color on the title line
+	\textbf{Actor} & \textbf{Description} \\ \hline
+	\showrowcolors % Show color for all rows to come
+}%
+{ \hline
+	\end{longtable}%
+}
+
+\newcommand{\Actor}[2]{#1 & #2 \\}
 %--------------------------------------------------
 
 
@@ -38,4 +55,35 @@
 {\\ \hline \end{longtable}}
 
 \newcommand{\TC}[4]{\\ \hline \parbox[t]{\TCsteps}{#1} & \parbox[t]{\TCmethod}{#2} &\parbox[t]{\TCexpected}{#3}&  \parbox[t]{\TCsucces}{#4} }
+%--------------------------------------------------
+
+
+
+%--------------------------------------------------
+%\begin{UseCases}
+%\UC
+%{Use Case Name}
+%{Description}
+%\UC
+%{Use Case Name}
+%{Description}
+%\end{UseCases}
+%--------------------------------------------------
+\newcommand{\UCNamesteps}{0.25 \textwidth}
+\newcommand{\UCDescription}{0.7 \textwidth}
+
+\newenvironment{UseCases}
+{%
+	\rowcolors{1}{gray!20!white}{} % Row color shifting
+	\begin{longtable}{ p{\UCNamesteps}  p{\UCDescription} }%
+	\hline %
+	\hiderowcolors % We don't want the color on the title line
+	\textbf{Use Case} & \textbf{Description} \\ \hline %
+	\showrowcolors % Show color for all rows to come	
+}
+{\hline \end{longtable}}
+
+\newcommand{\UC}[2]{#1 & #2 \\}
+
+
 %--------------------------------------------------
