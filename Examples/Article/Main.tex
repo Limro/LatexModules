@@ -1,0 +1,34 @@
+\documentclass[english, oneside, 12pt]{article}
+
+\input{Preamble}
+\input{\modulesPath/Style-article}
+
+\title{Building a article document}
+\author{<Your name>}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{DummyPage1}
+
+\newpage
+\tableofcontents 	% Table of Contents
+P.S: If you want more listed here, look at the module TableOfContentSetup.tex.
+\\ 
+Increase \verb\setcounter{tocdepth}{1} to wanted number.
+\newpage 
+
+\input{DummyPage2}
+
+\newpage
+\appendix
+
+\input{DummyPage3}
+
+\bibliographystyle{plainnat}
+\bibliography{References}
+
+
+\end{document}

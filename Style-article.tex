@@ -8,3 +8,10 @@
 \usepackage{lastpage} %Finds last page number
 \usepackage{xspace} %Inserts necesary space bestween the page number, the dash and the total pagenumber
 \newcommand{\footerText}{\thepage\xspace /\pageref{LastPage}}
+\usepackage{titlesec}
+
+% http://tex.stackexchange.com/questions/53338/reducing-spacing-after-headings
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
