@@ -1,0 +1,191 @@
+%!TEX root = Main.tex
+
+\chapter{The figures and tables in your document}
+
+When writing information down, it can get boring to read.
+Spice up that sh\dots text with some figures!
+
+Insert a figure like the on Figure \ref{fig:Dummy1}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=0.5\textwidth]{Dummy}
+\caption{A dummy figure}
+\label{fig:Dummy1}
+\end{figure}
+
+Or, if you don't really know what to input, do as on Figure \ref{fig:Dummy2}.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[draft, width=0.75\textwidth]{Dummy}
+\caption{A dummy figure, but without content}
+\label{fig:Dummy2}
+\end{figure}
+
+Or perhaps you want two figure side by  side like figure \ref{fig:Dummy3} and \ref{fig:Dummy4}
+
+\begin{figure}[hbtp]
+	\centering
+
+	\begin{minipage}[t]{.45\textwidth}
+		\includegraphics[width=\textwidth]{Dummy}
+		\captionof{figure}{The first figure.}
+		\label{fig:Dummy3}
+	\end{minipage} 
+	\hfill % Fills the gap with empty space\usepackage{capt-of}
+	\begin{minipage}[t]{.45\textwidth}
+		\includegraphics[width=\textwidth]{Dummy}
+		\captionof{figure}{Here it is again}
+		\label{fig:Dummy4}
+	\end{minipage}
+
+\end{figure}
+
+
+
+\section{Wall of text}
+
+\lipsum[1-5]
+
+
+
+
+
+% How about some tables
+\newpage
+
+\FloatBarrier
+\section{Some tables}
+
+It's table time.
+
+\subsection{How to table}
+
+Have a look at Table \ref{tab:boring}.
+It's very boring.
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\textwidth}{l X}
+	\textbf{A number} & \textbf{A short text}  \\
+	1 & This is the first number \\
+	2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+	3 & Now with a third line. \\
+	5 & Oops -- we missed the forth number \\
+	10 & It's all wrong now \\
+	-4 & Wat?
+	\end{tabularx}
+	\caption{Boring table}
+	\label{tab:boring}
+\end{table}
+
+
+\subsection{An excel arc}
+
+Dear lord, you did not just!
+Look what you did!
+Look at Table \ref{tab:excel}! 
+It's ugly as a new born baby's leftovers!
+
+\begin{table}[htbp]
+	\centering
+	\begin{tabularx}{\textwidth}{| l | X |}
+	\hline
+	\textbf{A number} & \textbf{A short text}  \\ \hline
+	1 & This is the first number \\ \hline
+	2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\ \hline
+	3 & Now with a third line. \\ \hline
+	5 & Oops -- we missed the forth number \\ \hline
+	10 & It's all wrong now \\ \hline
+	-4 & Wat? \\ \hline
+	\end{tabularx}
+	\caption{The Excel table}
+	\label{tab:excel}
+\end{table}
+
+
+\subsection{An exotic table}
+
+Lets add a header above and under the bold text\dots and at the end.
+And lets add some colors.
+Have a look at Table \ref{tab:exotic} -- it's much better!
+Now you have a chance of seeing what is happening on each line with worrying about it looking ugly!
+
+\begin{table}[htbp]
+	\centering
+	\rowcolors{1}{gray!20!white}{} % Color on every other line
+	\begin{tabularx}{\textwidth}{l X} \hline
+	\hiderowcolors % We don't want the color on the title line
+	\textbf{A number} & \textbf{A short text}  \\ \hline
+	\showrowcolors % Show color for all rows to come
+	1 & This is the first number \\
+	2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+	3 & Now with a third line. \\
+	5 & Oops -- we missed the forth number \\
+	10 & It's all wrong now \\
+	-4 & Wat? \\ \hline
+	\end{tabularx}
+	\caption{A way funnier table}
+	\label{tab:exotic}
+\end{table}
+
+\newpage
+\subsection{Long-ass table -- aka. multi pages}
+
+You need that?
+YES -- ALWAYS in need of more!
+Table \ref{tab:long} shows this.
+
+\rowcolors{1}{gray!20!white}{} % Color on every other line
+\begin{longtable}{p{0.15\textwidth} p{0.8\textwidth}} 
+\hline
+\hiderowcolors % We don't want the color on the title line
+\textbf{A number} & \textbf{A short text}  \\ \hline
+\showrowcolors % Show color for all rows to come
+1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+	1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+	1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+	1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+	1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+	1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+	1 & This is the first number \\
+2 & This is also a number, but there's way more text in here. A lot more! It's crazy!!! It's two lines. \\
+3 & Now with a third line. \\
+5 & Oops -- we missed the forth number \\
+10 & It's all wrong now \\
+-4 & Wat? \\ \hline
+
+\caption{A multi paged table}
+\label{tab:long}
+\end{longtable}

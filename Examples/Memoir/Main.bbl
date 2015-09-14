@@ -1,0 +1,19 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Dummy(2015)]{LatexModulesLink}
+Mr~Dummy.
+\newblock Latex modules.
+\newblock \url{https://github.com/Limro/LatexModules}, 9 2015.
+
+\bibitem[Dummy and Dummies(2015)]{dummy2015}
+Mr~Dummy and Mrs Dummies.
+\newblock How to build latex documents.
+\newblock \emph{GitHub monthly Best of the Meh-good-enough}, 1:\penalty0 1--2,
+  2015.
+
+\end{thebibliography}

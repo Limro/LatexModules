@@ -1,0 +1,33 @@
+\documentclass[english, oneside, 12pt]{memoir}
+
+\input{Preamble}
+\input{\modulesPath/Style-memoir}
+
+\title{Building a Memoir document}
+\author{<Your name>}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{DummyPage1}
+
+\newpage
+\begin{KeepFromToc}
+	\tableofcontents 	% Table of Contents
+\end{KeepFromToc}
+
+\input{DummyPage2}
+
+\newpage
+\appendix
+
+\chapter{Appendix}
+\input{DummyPage3}
+
+\bibliographystyle{plainnat}
+\bibliography{References}
+
+
+\end{document}

@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {chapter}{\chapternumberline {1}The first page with content}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}The first information}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}The next information}{2}{section.1.2}
+\contentsline {chapter}{\chapternumberline {2}The figures and tables in your document}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Wall of text}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Some tables}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}How to table}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}An excel arc}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}An exotic table}{7}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Long-ass table -- aka. multi pages}{8}{subsection.2.2.4}
+\contentsline {appendix}{\chapternumberline {A}Appendix}{10}{appendix.A}
+\contentsline {section}{\numberline {A.1}It's not so important}{10}{section.A.1}
+\contentsline {section}{\numberline {A.2}Not important either}{10}{section.A.2}
+\contentsline {chapter}{Bibliography}{11}{section*.2}
