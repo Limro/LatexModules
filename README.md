@@ -1,10 +1,6 @@
 LatexModules
 ============
 
-# Under reconstruction #
-
-* * *
-
 Modules for Latex preambles.
 
 These modules can be loaded into your preamble.
@@ -14,36 +10,26 @@ Installation
 ------------
 Download it here: [**Latest build**](https://github.com/Limro/LatexModules/releases/latest) and place it in a folder called ```LatexModules```
 
+Place them in a folder close to your working directory:
 
-Example
--------
-Your tree looks like this:
-
-+ Document/
-	+ LatexModules/
-		- ...
+```
++ .\
+	+ LatexModules
+		- CiteSetup.tex
 		- FigureSetup.tex
 		- ...
-	- Main.tex
-	- Preamble.tex
-
-Your Main.tex would look like this:
-
-```latex
-\documentclass[a4, english]{article}
-\input{Preamble}
-
-\begin{document}
-\dots
-\end{document}
+	+ Documentation
+		- Main.tex
+		- Preamble
+		+ Figures
+			- Dummy.png
+		- References.bib
 ```
 
-Then your preamble would be:
+Head to the [memoir example](Examples/Memoir) or the [article example](Examples/Article) to learn how to use them.
 
-```latex
-\input{LatexModules/FigureSetup} %Note: "LatexModules" is your name of the directory
-...
-\title{Latex Modules setup}
-```
+* Papers are not listed supported yet. 
 
-That is all you need.
+* Article is recommended for normal pages under 15 pages.
+
+* Memoir is recommended for 15 pages and above.
