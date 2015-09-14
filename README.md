@@ -26,6 +26,12 @@ Place them in a folder close to your working directory:
 		- References.bib
 ```
 
+### Important installation note
+
+**If the LatexModules folder's location is changed folder-wise from the current setup (not as seen above), you must go to the ``Preamble.tex`` file and change the line ``\newcommand{\modulesPath}{../../../LatexModules/}`` to point at your location.
+
+If you place them as above, let it be ``\newcommand{\modulesPath}{../LatexModules/}``**
+
 Head to the [memoir example](Examples/Memoir) or the [article example](Examples/Article) to learn how to use them.
 
 * Papers are not listed supported yet. 
